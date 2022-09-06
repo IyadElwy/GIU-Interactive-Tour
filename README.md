@@ -8,8 +8,11 @@
 4. But don't change or add code or files in files or folders you did not create or worked on
    (Conflicts in merging)
 5. Copy the latest main branch and always work on your `own` branch
-6. Add `.gitignore` file and add this .gitignore file and any other IDE configuration file to
-   it (we want only source code)
+6. Add `.gitignore` file to the project root and add this .gitignore file and any other IDE
+   configuration + the `Config.env` file to the `.gitignore file`
+    1. /backend/Config.env
+    2. .gitignore
+    3. any IDE config file
 7. Any secret keys or variables to be added in the `Config.env` File
 8. Maximum 80 characters on one line (Configure your IDE to add a line at `80` characters)
 9. Work in a modularised way
@@ -18,13 +21,13 @@
 12. Write lots of comments
 13. Make sure you can access the github repo
 14. Make sure you can access the mongoDB dashboard and add your ip-address
-15. If you want to add some extra functionality or want to remind yourself go to the `github 
-    repo > Projects tab > GIU Interactive Tour` and add it
+15. If you want to add some extra functionality or want to remind yourself go to
+    the `github repo > Projects tab > GIU Interactive Tour` and add it
 16. Run `npm i` first to locally install all dependencies in package.js
 17. to run server run `node server.js`
 
-
 ### Node.js Structure
+
 #### Go to this [repo](https://github.com/IyadElwy/Rabbit) and go to `backend>User-API` to know what code goes in each folder ex. controllers, routes, etc.
 
 ### [Google Drive For Project Info](https://drive.google.com/drive/folders/1x00-9WWL9fb0mNW7Gfo4_02n4-1UucQJ?usp=sharing)
