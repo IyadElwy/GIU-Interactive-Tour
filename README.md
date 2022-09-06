@@ -17,12 +17,15 @@
 11. Don't write deprecated code (there's always a better way)
 12. Write lots of comments
 13. Make sure you can access the github repo
-16. Make sure you can access the mongoDB dashboard and add your ip-address
-14. Run `npm i` first to locally install all dependencies in package.js
-15. to run server run `node server.js`
+14. Make sure you can access the mongoDB dashboard and add your ip-address
+15. If you want to add some extra functionality or want to remind yourself go to the `github 
+    repo > Projects tab > GIU Interactive Tour` and add it
+16. Run `npm i` first to locally install all dependencies in package.js
+17. to run server run `node server.js`
+
 
 ### Node.js Structure
-#### Go to this [repo](https://github.com/IyadElwy/Rabbit) and go to backend>User-API to know what code goes in each folder ex. controllers, routes, etc.
+#### Go to this [repo](https://github.com/IyadElwy/Rabbit) and go to `backend>User-API` to know what code goes in each folder ex. controllers, routes, etc.
 
 ### [Google Drive For Project Info](https://drive.google.com/drive/folders/1x00-9WWL9fb0mNW7Gfo4_02n4-1UucQJ?usp=sharing)
 
