@@ -10,4 +10,4 @@
 ![Screens3](https://user-images.githubusercontent.com/83036619/188689438-b8659c0c-c958-4fc1-aeaa-7a3ac2fd8575.png)
 
 ### Architecture
-![Uploading Architecture.png…]()
+![Architecture](https://user-images.githubusercontent.com/83036619/188696377-c688c80f-e951-4c18-9210-5140c25f45ab.png)
