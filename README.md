@@ -2,7 +2,7 @@
 
 ### [Google Drive For Project Info](https://drive.google.com/drive/folders/1x00-9WWL9fb0mNW7Gfo4_02n4-1UucQJ?usp=sharing)
 
-### [Timeline]()
+### [Timeline](https://docs.google.com/spreadsheets/d/1VUADXDYOKRIcg6IPvLO37_ueoIYEWHhzrOpWv3jqqeA/edit?usp=sharing)
 
 ### User Design
 ![Screens1](https://user-images.githubusercontent.com/83036619/188689409-b54475b9-95d4-4413-b961-c87986c83d32.png)
