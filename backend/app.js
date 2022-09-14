@@ -2,6 +2,7 @@
 // imports
 
 const express = require('express');
+const personalTour = require('./routes/personalTour')
 
 
 const userRouter = require("./routes/userRoutes");  
@@ -15,8 +16,9 @@ const app = express();
 
 ////////////////////////////////////////////////////////////////////////////
 // routes
-
 app.use('/users', userRouter);
+
+app.use('/api/v1/personalTour', personalTour);
 
 ///////////////////////////////////////////////////////////////////////////////
 
