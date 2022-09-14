@@ -1,4 +1,8 @@
-// get all users
-// get user by id
-// update email by id
-// create user
+const express = require("express");
+
+const userController = require("../controllers/userController");
+
+const router = express.Router();
+
+router.route("/").get(userController.getAllUsers);
+
