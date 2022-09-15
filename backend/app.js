@@ -12,6 +12,7 @@ const locationRouter = require('./routes/locationRoutes')
 
 
 const app = express();
+app.use(express.json());
 
 
 ////////////////////////////////////////////////////////////////////////////
