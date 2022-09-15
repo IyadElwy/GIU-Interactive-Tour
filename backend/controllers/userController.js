@@ -1,5 +1,6 @@
 const User = require("../models/userSchema");
 
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.getAllUsers = async (req, res, next) => {
   try {
