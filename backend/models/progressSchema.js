@@ -9,7 +9,11 @@ const progressSchema = mongoose.Schema(
                     ref:'location'
                 }
             }
-        ]
+        ],
+        UserId:{
+            type:mongoose.Schema.ObjectId,
+                    ref:'user'
+        }
     }
 )
 
