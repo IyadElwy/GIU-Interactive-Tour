@@ -2,6 +2,7 @@
 // imports
 
 const express = require('express');
+const progressRoute = require('./routes/progressRoutes')
 ////////////////////////////////////////////////////////////////////////////
 // Config
 
@@ -12,6 +13,8 @@ app.use(express.json());
 
 ////////////////////////////////////////////////////////////////////////////
 // routes
+
+app.use('/progress',progressRoute)
 
 // app.use('/api/v1/....', someRouteYouImported);
 

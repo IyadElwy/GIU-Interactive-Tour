@@ -5,17 +5,18 @@ const progressSchema = mongoose.Schema(
         Locations:[
             {
                 Location:{
-                    type:mongoose.Schema.ObjectId,
-                    ref:'location'
+                    type:Boolean,
+                    default:false
                 }
             }
         ],
         UserId:{
             type:mongoose.Schema.ObjectId,
-                    ref:'user'
+            ref:'user',
+            required:true
         }
     }
-)
+);
 
 const progress = mongoose.model('progress', progressSchema);
 
