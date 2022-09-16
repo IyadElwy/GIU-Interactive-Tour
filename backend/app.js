@@ -8,7 +8,7 @@ const personalTour = require('./routes/personalTour')
 
 
 const app = express();
-
+app.use(express.json());
 
 ////////////////////////////////////////////////////////////////////////////
 // routes
