@@ -3,8 +3,12 @@
 
 const express = require('express');
 const personalTour = require('./routes/personalTour')
+
+
+const userRouter = require("./routes/userRoutes");  
 ////////////////////////////////////////////////////////////////////////////
 // Config
+
 
 
 const app = express();
@@ -12,6 +16,7 @@ app.use(express.json());
 
 ////////////////////////////////////////////////////////////////////////////
 // routes
+app.use('/users', userRouter);
 
 app.use('/api/v1/personalTour', personalTour);
 
