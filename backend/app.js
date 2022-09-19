@@ -7,7 +7,7 @@ const express = require('express');
 
 const locationRouter = require('./routes/locationRoutes')
 const personalTourRouter = require('./routes/personalTourRoutes')
-
+const progressRoute = require('./routes/progressRoutes')
 ////////////////////////////////////////////////////////////////////////////
 // Config
 
@@ -21,6 +21,7 @@ app.use(express.json());
 
 app.use('/locations', locationRouter);
 app.use('/personaltour', personalTourRouter);
+app.use('/progress', progressRoute);
 
 ///////////////////////////////////////////////////////////////////////////////
 
