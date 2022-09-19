@@ -8,6 +8,8 @@ const express = require('express');
 const locationRouter = require('./routes/locationRoutes')
 const personalTourRouter = require('./routes/personalTourRoutes')
 const progressRoute = require('./routes/progressRoutes')
+const personalTour = require('./routes/personalTour')
+const userRouter = require("./routes/userRoutes");
 ////////////////////////////////////////////////////////////////////////////
 // Config
 
@@ -15,14 +17,12 @@ const progressRoute = require('./routes/progressRoutes')
 const app = express();
 app.use(express.json());
 
-
 ////////////////////////////////////////////////////////////////////////////
 // routes
-
+app.use('/users', userRouter);
 app.use('/locations', locationRouter);
 app.use('/personaltour', personalTourRouter);
 app.use('/progress', progressRoute);
-
 ///////////////////////////////////////////////////////////////////////////////
 
 module.exports = app;
