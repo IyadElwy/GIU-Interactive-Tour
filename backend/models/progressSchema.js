@@ -2,18 +2,17 @@ const mongoose = require('mongoose');
 
 const progressSchema = mongoose.Schema(
     {
-        Locations:[
-            {
-                Location:{
-                    type:Boolean,
-                    default:false
-                }
+        Locations: [{
+            type: {
+                type: mongoose.Schema.ObjectId,
+                ref: 'Location'
             }
-        ],
-        UserId:{
-            type:mongoose.Schema.ObjectId,
-            ref:'user',
-            required:true
+        }],
+
+        UserId: {
+            type: mongoose.Schema.ObjectId,
+            ref: 'user',
+            required: true
         }
     }
 );

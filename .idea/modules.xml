@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GIU-Interactive-Tour.iml" filepath="$PROJECT_DIR$/.idea/GIU-Interactive-Tour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LearningNodeJs/Natours/.idea/Natours.iml" filepath="$PROJECT_DIR$/../LearningNodeJs/Natours/.idea/Natours.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LearningNodeJs/RabbitFinal/.idea/RabbitFinal.iml" filepath="$PROJECT_DIR$/../LearningNodeJs/RabbitFinal/.idea/RabbitFinal.iml" />
+    </modules>
+  </component>
+</project>
