@@ -115,4 +115,60 @@ margin: 30%;}
 padding-top: 25;
 padding-bottom: 25;
 }
+.progress{
+  height: 30px;
+  border-radius: 40;
+  margin: 10%;
+}
+.progress-bar{
+  background-color: #4BB543;
+  border-radius: 40;
+  text-align: center;
+  color: white;
+  transition: 0.5s;
+}
 
+.card{
+  margin: 10%;
+  border-radius: 40;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+:root{
+  --complete-color: #4BB543;
+  --incomplete-color: #D3D3D3;
+}
+
+.lobby{
+  background-color: var(--incomplete-color);
+}
+
+.MBuilding{
+  background-color: var(--incomplete-color);
+}
+
+.SBuilding{
+  background-color: var(--incomplete-color);
+}
+
+.Cafeteria{
+  background-color: var(--incomplete-color);
+}
+
+.Camerabtn{
+  background-color: #E84435;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1;
+  height: 50px;
+  margin: 10%;
+}

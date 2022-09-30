@@ -68,6 +68,7 @@ text-align: center;
     background-color: var(--incomplete-color);
 }
 .btn{
+    border-radius: 25px;
     background-color: #E84435;
     border-radius: 40;
     color: white;
