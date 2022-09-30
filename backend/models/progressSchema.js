@@ -8,12 +8,6 @@ const progressSchema = mongoose.Schema(
                 ref: 'Location'
             }
         }],
-
-        UserId: {
-            type: mongoose.Schema.ObjectId,
-            ref: 'user',
-            required: true
-        }
     }
 );
 
