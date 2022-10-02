@@ -3,9 +3,11 @@ const mongoose = require('mongoose');
 const progressSchema = mongoose.Schema(
     {
         Locations: [{
-            type: {
-                type: mongoose.Schema.ObjectId,
-                ref: 'Location'
+            location: {
+                type: 'String'
+            },
+            seen: {
+                type: 'boolean'
             }
         }],
     }

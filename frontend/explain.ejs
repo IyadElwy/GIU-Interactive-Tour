@@ -23,6 +23,10 @@
 <div id="wrapper">
     <div>
         <div class="Help">
+            <br>
+            <br>
+            <br>
+            <br>
             <h2>Hello World!</h2>
 
             <p>We are the Google Developer Student Club at the GIU. A community of developers
@@ -39,15 +43,32 @@
             </p>
 
 
-            <button style="text-decoration: none; margin-left: 110px" type="submit"
-                    class="Submit btn
+            <!--            <button style="text-decoration: none; margin-left: 110px" type="submit"-->
+            <!--                    class="Submit btn-->
+            <!--            btn-secondary btn-lg-->
+            <!--            text-center"-->
+            <!--                    value="Let's Go!"><a style="text-decoration: none; color: white"-->
+            <!--                                         href="/progress">Start</a></button>-->
+
+
+            <form action="/progress" method="get">
+                <input hidden type="text" class="TextBox form-group"
+                       name="userid"
+                       value=<%= id %>>
+
+
+                <button style="text-decoration: none; margin-left: 110px" type="submit"
+                        class="Submit btn
             btn-secondary btn-lg
             text-center"
-                    value="Let's Go!"><a style="text-decoration: none; color: white"
-                                         href="/progress">Start</a></button>
-
+                        value="Let's Go!"><a style="text-decoration: none; color: white"
+                                             type="submit"
+                    >Start</a></button>
+            </form>
             <br>
             <button class="btn lg "><a href="/">Back</a></button>
+
+
         </div>
 
 
@@ -67,6 +88,8 @@
     </div>
 </div>
 
+<p id="user_id" hidden><%= id %></p>
+
 </body>
 
 <script>
@@ -75,5 +98,10 @@
     window.addEventListener("load", function () {
         loader.style.display = "none";
     });
+
+    const id = document.getElementById('user_id').textContent;
+    document.cookie = `user_id=${id}`
+    console.log(id)
+
 </script>
 </html>

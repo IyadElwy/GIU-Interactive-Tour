@@ -23,13 +23,23 @@
     <div class="nav-bar d-flex justify-content-center">
         <div class="row">
             <h1>Giu Tour</h1>
-            <input type="Email" class="TextBox form-group" Placeholder="Email"
-                   name="Email">
-            </br>
-            <button style="text-decoration: none" type="submit" class="Submit btn btn-secondary btn-lg
-            text-center"
-                    value="Let's Go!"><a style="text-decoration: none; color: white"
-                                         href="/help">Let's Go!</a></button>
+
+            <form action="/explain" method="post">
+                <input type="text" class="TextBox form-group" Placeholder="Email"
+                       name="Email">
+
+
+                <button style="text-decoration: none" type="submit" class="Submit btn
+                                            btn-secondary btn-lg text-center"
+                        value="Let's Go!">
+                    <a
+                            style="text-decoration: none; color: white; text-align: center">Let's
+                        Go!</a>
+
+                </button>
+            </form>
+
+
         </div>
     </div>
 

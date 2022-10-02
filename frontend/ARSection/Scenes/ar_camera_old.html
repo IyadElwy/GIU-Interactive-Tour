@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="ar_styles.css">
 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
-<body>
-<a-scene style="position: relative;" embedded arjs='sourceType: webcam;'>
-    <a-marker id="ArchMark" type='pattern'
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam;'>
+    <a-marker id="anchorRef" type='pattern'
               url='../Markers/ArchitectureMarkers/pattern-archModel.patt'>
         <a-asset-item id="crate" src="../Assets/ArchitectureModel/shimiao.obj"></a-asset-item>
         <a-asset-item id="crate-mtl"
@@ -15,34 +14,55 @@
                      rotation="-90 0 0"></a-obj-model>
     </a-marker>
 
-    <a-marker id="BusinessMark" type='pattern'
+    <a-marker id="anchorRef1" type='pattern'
               url='../Markers/BusinessMarkers/pattern-BusinessMarker.patt'>
-
+        <script>
+            anchorRef1.addEventListener("markerFound", (e) => {
+                console.log("marker found");
+            });
+            anchorRef1.addEventListener("markerLost", (e) => {
+                console.log("marker Lost");
+            });
+        </script>
         <a-asset-item id="stat" src="../Assets/BusinessModel/stat.obj"></a-asset-item>
         <a-asset-item id="stat-mtl" src="..//Assets/BusinessModel/stat.mtl"></a-asset-item>
         <a-obj-model src="#stat" mtl="#stat-mtl" scale="1 1 1"
                      rotation="-90 0 0"></a-obj-model>
     </a-marker>
 
-    <a-marker id="CSMark" type='pattern' url='../Markers/CSMarkers/pattern-CSMarker.patt'>
+    <a-marker id="anchorRef2" type='pattern' url='../Markers/CSMarkers/pattern-CSMarker.patt'>
         <a-asset-item id="cs" src="../Assets/Notebook/Lowpoly_Notebook_2.obj"></a-asset-item>
         <a-asset-item id="cs-mtl"
                       src="..//Assets/Notebook/Lowpoly_Notebook_2.mtl"></a-asset-item>
         <a-obj-model src="#cs" mtl="#cs-mtl" scale="1 1 1" rotation="0 90 0"></a-obj-model>
     </a-marker>
 
-    <a-marker id="EngineeringMark" type='pattern'
+    <a-marker id="anchorRef3" type='pattern'
               url='../Markers/EngineeringMarkers/pattern-EngineeringMarker.patt'>
-
+        <script>
+            anchorRef3.addEventListener("markerFound", (e) => {
+                console.log("marker found");
+            });
+            anchorRef3.addEventListener("markerLost", (e) => {
+                console.log("marker Lost");
+            });
+        </script>
         <a-asset-item id="rmk3" src="../Assets/EngineeringModel/Rmk3.obj"></a-asset-item>
         <a-asset-item id="rmk3-mtl" src="..//Assets/EngineeringModel/Rmk3.mtl"></a-asset-item>
         <a-obj-model src="#rmk3" mtl="#rmk3-mtl" scale="0.0075 0.0075 0.0075"
                      rotation="-90 0 0" position="-2 0 -1"></a-obj-model>
     </a-marker>
 
-    <a-marker id="PharamaMark" type='pattern'
+    <a-marker id="anchorRef4" type='pattern'
               url='../Markers/PharmaMarkers/pattern-PharmaMarker.patt'>
-
+        <script>
+            anchorRef4.addEventListener("markerFound", (e) => {
+                console.log("marker found");
+            });
+            anchorRef4.addEventListener("markerLost", (e) => {
+                console.log("marker Lost");
+            });
+        </script>
         <a-asset-item id="thymine" src="../Assets/PharmaModel/DNA.obj"></a-asset-item>
         <a-asset-item id="thymine-mtl"
                       src="..//Assets/PharmaModel/materials.mtl"></a-asset-item>
@@ -50,15 +70,28 @@
                      position="0 0 -1"></a-obj-model>
     </a-marker>
 
-    <a-marker id="GDSCMark" type='pattern' url='../Markers/GDSCMarker/pattern-GDSC.patt'>
+    <a-marker id="anchorRef5" type='pattern' url='../Markers/GDSCMarker/pattern-GDSC.patt'>
         <a-asset-item id="crate" src="../Assets/GDSCLogo/GDSCLogo.obj"></a-asset-item>
         <a-asset-item id="crate-mtl" src="..//Assets/GDSCLogo/GDSCLogo.mtl"></a-asset-item>
         <a-obj-model src="#crate" mtl="#crate-mtl" scale="0.05 0.05 0.05"
                      rotation="0 90 90"></a-obj-model>
     </a-marker>
 
-    <a-marker id="VidMark" type='pattern' url='../Markers/GIUVidMarker/pattern-giu_logo.patt'>
+    <a-marker id="anchorRef6" type='pattern'
+              url='../Markers/GIUVidMarker/pattern-giu_logo.patt'>
+        <script>
 
+            anchorRef6.addEventListener("markerFound", (e) => {
+                var video = document.querySelector("#giu");
+                console.log("marker found");
+                video.play();
+            });
+            anchorRef6.addEventListener("markerLost", (e) => {
+                var video = document.querySelector("#giu");
+                console.log("marker Lost");
+                video.pause();
+            });
+        </script>
 
         <video id="giu"
                src="../Assets/GIU Video/The German International University -GIU Campus in New Administrative Capital.mp4"></video>
@@ -70,16 +103,11 @@
 
     <a-entity camera></a-entity>
 </a-scene>
-
-<div class="dock">
-
-    <button type="button" class="dockItem"
-            onclick="history.back()">Back
-    </button>
-</div>
-
 </body>
-<script src="/ARSection/Scenes/marker_tracker.js">
+<script>
+    anchorRef1.addEventListener("markerFound", (e) => {
+        console.log("marker founddddddddddd");
 
+    });
 </script>
 </html>

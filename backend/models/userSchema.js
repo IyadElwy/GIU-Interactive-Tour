@@ -9,14 +9,14 @@ const userSchema = new Schema(
             unique: true,
             trim: true,
         },
-        personalTour: [{
-            type: mongoose.Schema.ObjectId,
-            ref: 'personalTour'
-        }],
-        progress: [{
-            type: mongoose.Schema.ObjectId,
-            ref: 'progress'
-        }],
+        Locations: [{
+            location: {
+                type: 'String'
+            },
+            seen: {
+                type: 'boolean'
+            }
+        }]
 
     })
 const User = mongoose.model('User', userSchema);

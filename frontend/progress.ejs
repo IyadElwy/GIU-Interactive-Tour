@@ -22,15 +22,15 @@
                 <div>
 
                     <div>
+                        <br>
                         <h3>Progress</h3>
                         <br>
 
                     </div>
                 </div>
 
-
                 <button class="Camerabtn" type="button" class="btn "
-                        onclick="javascript:location.href='./ARSection/Scenes/ar_camera.html'">
+                        onclick="javascript:location.href='ARSection/Scenes/ar_camera.html'">
                     Press to open AR camera 📸
                 </button>
 
@@ -38,59 +38,30 @@
                 <div style="height:500px;width:290px;font:16px/26px
             Georgia, Garamond, Serif;overflow:auto;">
 
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">Computer Science</h5>
-                        </div>
-                    </div>
+                    <% for (var i = 0; i < locations.length; i++) { %>
 
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">Business</h5>
-                        </div>
-                    </div>
+                        <% let color = 'lightgrey'; %>
+                        <% if (locations[i].seen) {
+                            color = 'green';
+                        } else {
+                            color = 'lightgrey';
+                        } %>
 
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">Engineering</h5>
-                        </div>
-                    </div>
 
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">Pharmaceutical</h5>
+                        <div class="card text-bg-primary mb-3 lobby"
+                             style="max-width: 18rem;color: black; background-color: <%= color %>">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= locations[i].location %></h5>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">Architecture</h5>
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">GDSC Logo</h5>
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary mb-3 lobby"
-                         style="max-width: 18rem;color: white; background-color: #ea4335">
-                        <div class="card-body">
-                            <h5 class="card-title">GIU Logo</h5>
-                        </div>
-                    </div>
+                    <% } %>
 
                 </div>
 
 
             </div>
+
 
         </div>
 
@@ -106,9 +77,14 @@
 
     </div>
 
-
 </div>
 </div>
 
 </body>
+
+
+<script !src="">
+
+</script>
+
 </html>
