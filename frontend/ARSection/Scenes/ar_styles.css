@@ -1,3 +1,4 @@
+
 .dock {
     position: absolute;
     backdrop-filter: blur(30px);
@@ -10,6 +11,8 @@
     font-size: large;
     border-radius: 30px;
     padding: 20px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .dockItem {
@@ -29,6 +32,5 @@
     text-decoration: none;
     text-shadow: 0px 1px 0px #cc9f52;
     font-family: 'Poppins', sans-serif;
-
 
 }
