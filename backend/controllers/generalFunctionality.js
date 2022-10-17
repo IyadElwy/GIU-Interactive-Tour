@@ -20,7 +20,7 @@ exports.deleteOne = Model => catchAsync(
             data: null
         });
 
-
+//
     }
 );
 
