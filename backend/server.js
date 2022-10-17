@@ -9,7 +9,7 @@ const app = require("./app");
 //////////////////////////////////////////////////////////////////////////////
 // DB config
 
-const uri = process.env.DATABASE_STRING;
+const uri = 'mongodb+srv://admin:E4ySvPgXFkW9pSP1@giutourcluster.balezcz.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once('open', () => {
@@ -19,7 +19,7 @@ connection.once('open', () => {
 //////////////////////////////////////////////////////////////////////////////
 // server config
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
